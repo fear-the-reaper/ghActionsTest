@@ -1,0 +1,20 @@
+# name of the workflow
+name: First workflow bitches
+
+# @ which event should trigger this workflow
+on: [push]
+
+# A grp of jobs dat preform actions to do some shit
+jobs:
+  # name of jobs
+  echoSomething1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "All these hoes"
+      - run: echo "in my head"
+      - run: echo "These hoes ain't loyal"
+      # using a market place action!
+      - name: Using check out repo code to use your code base in your gh workflow!
+      - uses: actions/checkout@v2
+      - name: Using checkout by catting ze README!
+      - run: cat README
