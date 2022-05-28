@@ -15,6 +15,6 @@ jobs:
       - run: echo "These hoes ain't loyal"
       # using a market place action!
       - name: Using check out repo code to use your code base in your gh workflow!
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - name: Using checkout by catting ze README!
-      - run: cat README
+        run: cat README
